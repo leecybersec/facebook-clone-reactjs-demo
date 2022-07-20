@@ -1,10 +1,9 @@
 import React from "react";
 import "./Login.css";
 import "../Component.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import LoginContainer from "./LoginContainer";
 import RegisterContainer from "./RegisterContainer";
-import db from "../firebase";
 
 function Login() {
   return (
@@ -13,12 +12,12 @@ function Login() {
         src="https://camo.githubusercontent.com/5f5ab1a46677524ae3fa0f1253fa1a9f50e328f83ada0494eed0d931943d1fac/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f382f38392f46616365626f6f6b5f4c6f676f5f253238323031392532392e7376672f3235363070782d46616365626f6f6b5f4c6f676f5f253238323031392532392e7376672e706e67"
         alt=""
       />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<LoginContainer />}></Route>
           <Route path="/register" element={<RegisterContainer />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
