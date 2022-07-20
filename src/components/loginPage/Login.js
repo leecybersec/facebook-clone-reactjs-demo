@@ -14,7 +14,7 @@ function Login() {
       />
       <HashRouter>
         <Routes>
-          <Route path="/login" element={<LoginContainer />}></Route>
+          <Route path="/" element={<LoginContainer />}></Route>
           <Route path="/register" element={<RegisterContainer />}></Route>
         </Routes>
       </HashRouter>
