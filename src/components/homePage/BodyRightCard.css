@@ -1,0 +1,36 @@
+.bodyRight__Card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  position: relative;
+}
+.avatarUser {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.avatarUser--haveStory {
+  border: solid 2px #fff;
+  outline: solid 3px blue;
+}
+.greenDot {
+  position: absolute;
+  bottom: 10px;
+  left: 35px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  outline: solid 3px var(--light-gray-color);
+}
+.bodyRight__Card:hover {
+  background-color: var(--gray-color);
+}
+.bodyRight__Card > p {
+  font-weight: 500;
+}

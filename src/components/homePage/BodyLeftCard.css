@@ -1,0 +1,28 @@
+.bodyLeft__Card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+}
+.bodyLeft__Card:hover {
+  background-color: var(--gray-color);
+}
+.bodyLeft__Card > p {
+  font-weight: 500;
+}
+
+.bodyLeft__Card:nth-last-child(1) > div {
+  padding: 5px;
+  background-color: #e0e2e6;
+  border-radius: 100rem;
+  width: 36px;
+  height: 36px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+}
+.bodyLeft__Card:nth-last-child(1):hover > div {
+  background-color: #cdcfd3;
+}

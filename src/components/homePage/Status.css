@@ -1,0 +1,36 @@
+.status {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.status__top {
+  display: flex;
+  border-bottom: solid 1px var(--light-gray-color);
+  padding-bottom: 10px;
+}
+.status__top > input {
+  margin-left: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--light-gray-color);
+  border-radius: 20px;
+}
+.status__bottom {
+  display: flex;
+}
+.status__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 5px 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.status__tag:hover {
+  background-color: var(--light-gray-color);
+}

@@ -1,0 +1,121 @@
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+.post__left {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.post__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.post__info > p {
+  color: gray;
+}
+.post__left > img,
+.post__info > p,
+.post__info > h4 {
+  cursor: pointer;
+}
+.post__info > p:hover,
+.post__info > h4:hover {
+  text-decoration: underline;
+}
+.post__edit {
+  display: grid;
+  place-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.post__edit:hover {
+  background-color: var(--light-gray-color);
+}
+.post__content {
+  padding: 0 12px 10px 12px;
+}
+.post > img {
+  width: 100%;
+  border-top: solid 1px var(--light-gray-color);
+  border-bottom: solid 1px var(--light-gray-color);
+}
+.post__bottom {
+  margin: 10px 12px;
+}
+.post__interact {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.post__interactItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.post__interactItem > p:hover {
+  text-decoration: underline;
+}
+.post__interactItem > * {
+  cursor: pointer;
+  font-weight: 300;
+}
+.post__interactItem > svg {
+  color: gray;
+}
+.post__interactItem--like > svg {
+  color: blue;
+}
+.post__interactRight {
+  display: flex;
+  gap: 10px;
+}
+.post__btns {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--gray-color);
+  border-top: solid 1px var(--gray-color);
+}
+.post__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 0;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.post__btn:hover {
+  background-color: var(--light-gray-color);
+}
+
+.post__btn > * {
+  color: gray;
+}
+.post__btn--like > * {
+  color: blue;
+}
+.post__comment {
+  margin: 10px 0;
+}
+.post__writeComment {
+  display: flex;
+  padding-bottom: 10px;
+}
+.post__writeComment > input {
+  margin-left: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--light-gray-color);
+  border-radius: 20px;
+}

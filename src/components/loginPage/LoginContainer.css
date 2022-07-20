@@ -1,0 +1,87 @@
+.login__container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  text-align: center;
+  gap: 15px;
+  width: 400px;
+}
+.login__container input,
+.login__container > button {
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid 1px gray;
+}
+.login__pwdText {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.login__pwdText > input {
+  width: 100%;
+}
+.login__pwdText > svg {
+  position: absolute;
+  right: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.login__container > button {
+  color: #fff;
+  background-color: #2b77f2;
+  cursor: pointer;
+}
+.login__fotgotText {
+  font-size: 20px;
+  color: #5494fe;
+}
+.login__orText {
+  position: relative;
+}
+.login__text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5494fe;
+}
+.login__container h5 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.login__media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  width: 0 auto;
+  transform: translateX(50%);
+}
+.login__media > button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.login__media > button:hover {
+  background-color: var(--gray-color);
+}
+.login__media > button > img {
+  width: 30px;
+}
+.login__media p {
+  color: #5494fe;
+  font-weight: 500;
+  font-size: 16px;
+}
+.login__google {
+  box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.2);
+}
+a {
+  color: #2b77f2;
+}

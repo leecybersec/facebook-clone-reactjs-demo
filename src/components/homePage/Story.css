@@ -1,0 +1,9 @@
+.story {
+  display: flex;
+  flex: none;
+  gap: 10px;
+  overflow: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+  padding: 12px;
+}

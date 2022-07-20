@@ -1,0 +1,10 @@
+.body__left {
+  height: 88vh;
+  overflow: auto;
+  padding: 20px 0;
+  min-width: 280px;
+  max-width: 360px;
+  margin-left: 10px;
+  position: fixed;
+  left: 0;
+}
