@@ -9,17 +9,17 @@ function HeaderNav() {
   const [activeNav, setActiveNav] = useState(0);
   const navs = [
     {
-      link: "/facebook-clone-reactjs-demo/",
+      link: "/",
       icon: <HomeOutlinedIcon />,
       text: "Home",
     },
     {
-      link: "/facebook-clone-reactjs-demo/watch",
+      link: "/watch",
       icon: <OndemandVideoOutlinedIcon />,
       text: "Watch",
     },
     {
-      link: "/facebook-clone-reactjs-demo/marketplace",
+      link: "/marketplace",
       icon: <StorefrontOutlinedIcon />,
       text: "Marketplace",
     },
