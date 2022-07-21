@@ -93,8 +93,7 @@ function LoginContainer() {
         </button>
       </div>
       <p>
-        Not have an account ?{" "}
-        <Link to="/facebook-clone-reactjs-demo/register">Register now</Link>
+        Not have an account ? <Link to="/register">Register now</Link>
       </p>
     </div>
   );
