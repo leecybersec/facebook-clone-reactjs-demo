@@ -15,7 +15,7 @@ function Login() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/facebook-clone-reactjs-demo"
+            path="/facebook-clone-reactjs-demo/"
             exact
             element={<LoginContainer />}
           ></Route>

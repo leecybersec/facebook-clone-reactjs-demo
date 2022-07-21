@@ -61,7 +61,7 @@ function RegisterContainer() {
       </button>
       <p>
         Already have an account ?{" "}
-        <Link to="/facebook-clone-reactjs-demo">Login now</Link>
+        <Link to="/facebook-clone-reactjs-demo/">Login now</Link>
       </p>
     </div>
   );

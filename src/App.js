@@ -20,7 +20,7 @@ function App() {
             <Header />
             <Routes>
               <Route
-                path="/facebook-clone-reactjs-demo"
+                path="/facebook-clone-reactjs-demo/"
                 exact
                 element={<HomePage />}
               />
