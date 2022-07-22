@@ -76,7 +76,7 @@ const menu = [
   },
 ];
 
-export const friends = [
+const friends = [
   {
     name: "David Brooks",
     imageUrl:
@@ -237,7 +237,7 @@ export const friends = [
   },
 ];
 
-export const posts = [
+const posts = [
   {
     name: "Jessie Samson",
     imageAva:
@@ -288,4 +288,50 @@ export const posts = [
   },
 ];
 
+const loginLinks = [
+  "Sign Up",
+  "Log In",
+  "Messenger",
+  "Facebook Lite",
+  "Watch",
+  "Places",
+  "Games",
+  "Marketplace",
+  "Facebook Pay",
+  "Oculus",
+  "Portal",
+  "Insagram",
+  "Bulletin",
+  "Local",
+  "Fundraisers",
+  "Services",
+  "Voting Infomation Centre",
+  "Groups",
+  "About",
+  "Create ad",
+  "Create Page",
+  "Developers",
+  "Carreers",
+  "Privacy",
+  "Cookies",
+  "AdChoices",
+  "Terms",
+  "Help",
+  "Contact uploading and non-users",
+];
+
+const languages = [
+  "English (UK)",
+  "Tiếng Việt",
+  "中文(台灣)",
+  "한국어",
+  "日本語",
+  "Français (France)",
+  "ภาษาไทย",
+  "Español",
+  "Português (Brasil)",
+  "Deutsch",
+  "Italiano",
+];
 export default menu;
+export { friends, posts, loginLinks, languages };
