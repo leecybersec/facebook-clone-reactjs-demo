@@ -5,7 +5,6 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import LoginContainer from "./LoginContainer";
 import RegisterContainer from "./RegisterContainer";
 import { loginLinks, languages } from "../Data";
-import { axios } from "axios";
 
 function Login() {
   return (
