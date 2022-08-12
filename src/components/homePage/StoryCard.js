@@ -7,6 +7,7 @@ function StoryCard({ backgroundUrl, userUrl, description }) {
       <img className="storyCard__background" src={backgroundUrl} alt="" />
       <img className="storyCard__imgUser" src={userUrl} alt="" />
       <p className="storyCard__description">{description}</p>
+      <div className="storyCard__fill"></div>
     </div>
   );
 }

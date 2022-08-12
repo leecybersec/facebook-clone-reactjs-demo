@@ -1,9 +1,66 @@
 .story {
-  display: flex;
-  flex: none;
-  gap: 10px;
-  overflow: auto;
-  overflow-x: hidden;
   margin-top: 20px;
-  padding: 12px;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+/* custom css multiple slider */
+.story .slick-arrow::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.story .slick-arrow {
+  background-color: #fff !important;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.15);
+  transition: all 0.08s ease-in-out;
+  opacity: 1;
+  right: 0;
+  z-index: 200 !important;
+}
+.story .slick-arrow::before {
+  z-index: 200 !important;
+  opacity: 1;
+}
+.story .slick-arrow:hover {
+  background-color: #fff;
+}
+.story .slick-disabled {
+  display: none !important;
+}
+.story .slick-next {
+  transform: translate(50%, -50%);
+  right: -15px;
+}
+.story .slick-prev {
+  transform: translate(-50%, -50%);
+  left: -15px;
+}
+
+.story .slick-slider:hover .slick-arrow {
+  width: 50px;
+  height: 50px;
+}
+.story .slick-slider:hover .slick-arrow:before {
+  font-size: 25px;
+}
+
+.story .slick-arrow::before {
+  color: rgba(0, 0, 0, 0.85);
+  z-index: 4;
+  font-size: 10px;
+  transition: all 0.08s ease-in-out;
+}
+.story .slick-next::before {
+  content: "\f105";
+}
+.story .slick-prev::before {
+  content: "\f104";
 }
