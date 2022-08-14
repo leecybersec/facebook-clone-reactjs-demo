@@ -60,12 +60,12 @@ function Header() {
           <div className="header__info">
             <Avatar
               src={
-                user._delegate.photoURL ??
+                user.photoURL ??
                 "https://us.123rf.com/450wm/hugok1000/hugok10001905/hugok1000190500198/123291745-default-profile-avatar-illustration-in-blue-and-white-no-person-.jpg"
               }
               size="28"
             />
-            <span>{user._delegate.displayName ?? user._delegate.email}</span>
+            <span>{user.displayName ?? user.email}</span>
           </div>
         )}
         <div className="header__btn">

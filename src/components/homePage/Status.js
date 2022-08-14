@@ -16,9 +16,9 @@ function Status() {
       dispatch({
         type: "add_post",
         post: {
-          name: user._delegate.displayName ?? user._delegate.email,
+          name: user.displayName ?? user.email,
           imageAva:
-            user._delegate.photoURL ??
+            user.photoURL ??
             "https://us.123rf.com/450wm/hugok1000/hugok10001905/hugok1000190500198/123291745-default-profile-avatar-illustration-in-blue-and-white-no-person-.jpg",
           caption: status,
           timeAgo: Date(),
@@ -37,16 +37,14 @@ function Status() {
       <div className="status__top">
         <Avatar
           src={
-            user._delegate.photoURL ??
+            user.photoURL ??
             "https://us.123rf.com/450wm/hugok1000/hugok10001905/hugok1000190500198/123291745-default-profile-avatar-illustration-in-blue-and-white-no-person-.jpg"
           }
           size="40"
         />
         <input
           type="text"
-          placeholder={`What's on your mind, ${
-            user._delegate.displayName ?? user._delegate.email
-          }`}
+          placeholder={`What's on your mind, ${user.displayName ?? user.email}`}
           onKeyDown={handleKeyDown}
           onChange={(e) => setStatus(e.target.value)}
           value={status}

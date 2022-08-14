@@ -18,10 +18,10 @@ function BodyLeft() {
     <div className="body__left">
       <BodyLeftCard
         imgUrl={
-          user._delegate.photoURL ??
+          user.photoURL ??
           "https://us.123rf.com/450wm/hugok1000/hugok10001905/hugok1000190500198/123291745-default-profile-avatar-illustration-in-blue-and-white-no-person-.jpg"
         }
-        description={user._delegate.displayName ?? user._delegate.email}
+        description={user.displayName ?? user.email}
       />
       {show
         ? menu.map((item, index) => (

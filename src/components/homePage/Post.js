@@ -18,7 +18,7 @@ function Post({
   shares,
   id,
 }) {
-  const [state, dispatch] = useUserContext();
+  const [{ user }, dispatch] = useUserContext();
   const handleDelete = () => {
     dispatch({
       type: "delete_post",
@@ -90,7 +90,7 @@ function Post({
           <div className="post__writeComment">
             <Avatar
               src={
-                state.user._delegate.photoURL ??
+                user.photoURL ??
                 "https://us.123rf.com/450wm/hugok1000/hugok10001905/hugok1000190500198/123291745-default-profile-avatar-illustration-in-blue-and-white-no-person-.jpg"
               }
               size="32"
