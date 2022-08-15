@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./RegisterContainer.css";
 import "../Component.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
@@ -12,6 +12,8 @@ function RegisterContainer() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   let [showPsw, setShowPwd] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleShowPwd = () => {
     setShowPwd(!showPsw);
@@ -24,6 +26,7 @@ function RegisterContainer() {
         setEmail("");
         setPassword("");
         toast.success("Register successful!");
+        navigate("/");
       } catch (error) {
         console.log(error.message);
       }

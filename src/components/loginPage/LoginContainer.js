@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./LoginContainer.css";
 import { auth, provider } from "../firebase";
 import { useUserContext } from "../../store/Context";
@@ -8,7 +8,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 function LoginContainer() {
   const [state, dispatch] = useUserContext();
@@ -17,20 +16,13 @@ function LoginContainer() {
   const [password, setPassword] = useState("");
   const [showPsw, setShowPwd] = useState(false);
 
-  const authCurrent = getAuth();
-  useEffect(() => {
-    onAuthStateChanged(authCurrent, (user) => {
-      dispatch({
-        type: actionsType.SET_USER,
-        user: user,
-      });
-    });
-  }, []);
-
   const handleClickLoginBtn = async () => {
     try {
-      await auth.signInWithEmailAndPassword(email, password);
-
+      const user = await auth.signInWithEmailAndPassword(email, password);
+      await dispatch({
+        type: actionsType.SET_USER,
+        user: user.user._delegate,
+      });
       toast.success("Login successful");
     } catch (error) {
       console.log(error);
@@ -43,8 +35,11 @@ function LoginContainer() {
   };
   const handleClickGgBtn = async () => {
     try {
-      await auth.signInWithPopup(provider);
-
+      const user = await auth.signInWithPopup(provider);
+      await dispatch({
+        type: actionsType.SET_USER,
+        user: user.user._delegate,
+      });
       toast.success("Login successful");
     } catch (error) {
       console.log(error);
