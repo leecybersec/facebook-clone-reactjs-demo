@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./LoginContainer.css";
 import { auth, provider } from "../firebase";
 import { useUserContext } from "../../store/Context";
@@ -15,6 +15,12 @@ function LoginContainer() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPsw, setShowPwd] = useState(false);
+
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const handleClickLoginBtn = async () => {
     try {
@@ -52,6 +58,7 @@ function LoginContainer() {
         placeholder="Email"
         onChange={(e) => setEmail(e.target.value)}
         value={email}
+        ref={inputRef}
       />
       <div className="login__pwdText">
         <input

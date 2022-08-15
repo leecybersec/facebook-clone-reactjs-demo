@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./RegisterContainer.css";
 import "../Component.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,6 +14,11 @@ function RegisterContainer() {
   let [showPsw, setShowPwd] = useState(false);
 
   const navigate = useNavigate();
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const handleShowPwd = () => {
     setShowPwd(!showPsw);
@@ -41,6 +46,7 @@ function RegisterContainer() {
         placeholder="Email"
         onChange={(e) => setEmail(e.target.value)}
         value={email}
+        ref={inputRef}
         required
       />
       <div className="register__pwdText">
